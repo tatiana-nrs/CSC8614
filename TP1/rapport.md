@@ -40,7 +40,7 @@ On obtient:
 
 Certains tokens commencent par un symbole spécial `Ġ` car GPT-2 utilise une byte-level BPE donc le tokenizer marque l'espace au début de ce mot avec un symbole spécial. Par exemple  `Ġword` correspond à ` word` (avec l'espace au début). 
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 
 ### **Question 2.b**
@@ -74,7 +74,7 @@ On obtient pour le mot long:
 [' ant', 'idis', 'establishment', 'arian', 'ism']
 ```
 
-On obtient 5 sous-tokens. Ce mot est long et peu fréquent dans les données d’entraînement. Le tokenizer GPT-2 basé sur le Byte Pair Encoding (BPE) le découpe donc en plusieurs sous-mots plus fréquents tels que des préfixes (ant et idis), des racines (establishment) et des suffixes (arian et ism). Cette stratégie permet de représenter efficacement des mots rares sans les stocker comme tokens uniques. 
+On obtient 5 sous-tokens. Ce mot est long et peu fréquent dans les données d’entraînement. Le tokenizer GPT-2 basé sur le Byte Pair Encoding (BPE) le découpe donc en plusieurs sous-mots plus fréquents tels que des préfixes (ant et idis), des racines (establishment) et des suffixes (arian et ism). Cela permet de représenter efficacement des mots rares sans les stocker comme tokens uniques. 
 
 ---
 
@@ -95,7 +95,7 @@ La 1ère dimension n_positions correspond au nombre de positions possibles (inde
 
 ### **Question 3.b**
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 Les positions 0 à 50 forment une trajectoire continue dans l’espace en 2D. La structure n’est pas aléatoire car on observe une forme de courbe régulière donc une certaine organisation, les points se suivent. 
 
@@ -103,7 +103,7 @@ Les encodages positionnels sont initialement en dimension 768 ce qui n’est pas
 
 ### **Question 3.c**
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 Avec les positions 0–200, la structure devient plus étendue et ressemble à une boucle. La trajectoire est plus longue et moins lisible localement sur la gauche avec plus de points qui se chevauchent. 
 
@@ -199,7 +199,7 @@ Le seed fixé est de 42. On le fixe car on veut rendre les résultats reproducti
 
 ### **Question 5.b**
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 Oui, c’est identique parce que le greedy decoding choisit à chaque étape le token le plus probable. Il n’y a pas de tirage aléatoire donc relancer le script produit la même suite de phrase.
 
