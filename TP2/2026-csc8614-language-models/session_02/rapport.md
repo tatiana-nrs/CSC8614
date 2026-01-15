@@ -61,11 +61,11 @@ Pour l'epoch 1, on a  Train Acc ≈ 86.47%, mais Spam Acc = 0% (train et test). 
 
 On a un changement à l'epoch 2 car Train Acc 88.22%, Test Acc 90.58% et surtout Spam Acc ≈ 81%. Le modèle commence à apprendre à détecter le spam.
 
-À l'epoch 3,  Spam Acc monte encore (≈ 90–93%), mais accuracy globale baisse (Train 81.40%, Test 83.59%) car on a plus de spams détectés, mais il fait aussi plus de faux positifs 
+À l'epoch 3,  Spam Acc monte encore (≈ 90–93%), mais accuracy globale baisse (Train 81.40%, Test 83.59%) car on a plus de spams détectés, mais il fait aussi plus de faux positifs.
 
 ### **Question 11**
 
-
+En augmentant le learning rate à 1e-4 et en limitant l’entraînement à 2 epochs, le modèle présente un comportement plus stable. La loss diminue régulièrement et l’accuracy sur le jeu de test atteint environ 89.7%, tandis que la détection du spam progresse sans que le modèle ne prédise systématiquement la classe minoritaire.
 
 ### **Question 12**
 
