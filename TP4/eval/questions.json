@@ -1,0 +1,78 @@
+[
+    {
+      "id": "q1",
+      "question": "Quels sont les sujets de PFE supplémentaires proposés par Luca Benedetto ?",
+      "expected_doc_type": "email"
+    },
+    {
+      "id": "q2",
+      "question": "Comment valider une UE?",
+      "expected_doc_type": "admin_pdf"
+    },
+    {
+      "id": "q3",
+      "question": "Qui compose le groupe du projet PRO 8605?",
+      "expected_doc_type": "email"
+    },
+    {
+      "id": "q4",
+      "question": "Quelles sont les dates limites de dépôt des candidatures CVEC 2026 et l’heure exacte?",
+      "expected_doc_type": "email"
+    },
+    {
+      "id": "q5",
+      "question": "Jusqu’à quelle date se déroule le module ENG 860?",
+      "expected_doc_type": "email"
+    },
+    {
+      "id": "q6",
+      "question": "Quelle est la date limite d’inscription au TOEIC du 17 janvier 2026 ?",
+      "expected_doc_type": "email"
+    },
+    {
+      "id": "q7",
+      "question": "Quelle est la date limite pour l’évaluation du cours Introduction au Deep Learning",
+      "expected_doc_type": "email"
+    },
+    {
+      "id": "q8",
+      "question": "Comment sont prises les décisions lors d’un conseil d’école?",
+      "expected_doc_type": "admin_pdf"
+    },
+    {
+      "id": "q9",
+      "question": "C'est quoi la FISE ?",
+      "expected_doc_type": "admin_pdf"
+    },
+    {
+      "id": "q10",
+      "question": "Le conseil d’école valide-t-il les UE des étudiants ?",
+      "expected_doc_type": "admin_pdf"
+    },
+    {
+      "id": "q11",
+      "question": "Quels documents sont nécessaires pour postuler à un programme extérieur ?",
+      "expected_doc_type": "admin_pdf"
+    },
+    {
+      "id": "q12",
+      "question": "Y a-t-il des informations dans les emails sur le TOEIC (inscriptions ou ressources) ?",
+      "expected_doc_type": "email"
+    },
+    {
+      "id": "q13",
+      "question": "Quelle conférence IP Paris est proposée aux étudiants en 2026?",
+      "expected_doc_type": "email"
+    },
+    {
+      "id": "q14",
+      "question": "Que se passe-t-il si un étudiant ne valide pas une UE ?",
+      "expected_doc_type": "admin_pdf"
+    },
+    {
+      "id": "q15",
+      "question": "Quelle est la date limite pour valider une UE ?",
+      "expected_doc_type": "admin_pdf"
+    }
+  ]
+  
