@@ -10,7 +10,7 @@ CSC8614 – TP5
 
 On a bien crée TP5 à la racine:
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 ### **Question 1.b**
 
@@ -20,7 +20,7 @@ On a relancé Ollama sur le serveur.
 
 On obtient:
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 ---
 
@@ -30,7 +30,7 @@ On obtient:
 
 On a crée le dossier avec les mails:
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 ### **Question 2.c**
 
@@ -41,7 +41,7 @@ On a bien ajouté la section attendu.
 Le jeu de test est composé de 9 emails stockés dans le dossier TP5/data/test_emails//
 On a :
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 Le jeu de test couvre des cas réalistes et variés rencontrés dans un contexte d'un étudiant. Il inclut des emails purement informatifs, des messages nécessitant une réponse, des demandes ambiguës et des emails à risque impliquant des données personnelles sensibles. Cette diversité permet d’évaluer efficacement la capacité du système à détecter l’intention, le niveau de risque et l’action appropriée à entreprendre.
 
@@ -49,7 +49,7 @@ Le jeu de test couvre des cas réalistes et variés rencontrés dans un contexte
 
 On obtient:
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 ---
 
@@ -59,17 +59,17 @@ On obtient:
 
 On a bien crée les dossiers:
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 ### **Question 3.e**
 
 Le fichier JSON est créé:
 
-![alt text](image-6.png)
+![alt text](img/image-6.png)
 
 Et on affiche un extrait:
 
-![alt text](image-7.png)
+![alt text](img/image-7.png)
 
 ---
 
@@ -79,7 +79,7 @@ Et on affiche un extrait:
 
 La décision JSON affichée est:
 
-![alt text](image-8.png)
+![alt text](img/image-8.png)
 
 Voici un extrait du run en JSONL:
 
@@ -96,13 +96,13 @@ Voici un extrait du run en JSONL:
 
 La commande utilisée est `pip install -U langgraph`. On a installé cette version:
 
-![alt text](image-9.png)
+![alt text](img/image-9.png)
 
 ### **Question 5.f**
 
 À l'éxécution, on obtient:
 
-![alt text](image-10.png)
+![alt text](img/image-10.png)
 
 On voit bien DECISION, DRAFT_V1 et ACTIONS.
 
@@ -137,15 +137,15 @@ La présence d’evidence est confirmée par l’événement tool_call dans l'ex
 
 On a un ca reply avec evidence non vide:
 
-![alt text](image-11.png)
+![alt text](img/image-11.png)
 
-![alt text](image-14.png)
+![alt text](img/image-14.png)
 
 Et un cas de safe mode:
 
-![alt text](image-12.png)
+![alt text](img/image-12.png)
 
-![alt text](image-13.png)
+![alt text](img/image-13.png)
 
 ---
 
@@ -155,13 +155,13 @@ Et un cas de safe mode:
 
 On a bien modifié state.py:
 
-![alt text](image-15.png)
+![alt text](img/image-15.png)
 
 ### **Question 8.f**
 
 On a bien 2 tentatives de retrieval comme on peut le voir ici:
 
-![alt text](image-16.png)
+![alt text](img/image-16.png)
 
 Après une première tentative de retrieval ne retournant aucun document (n_docs = 0), le nœud draft_reply bascule en safe mode. Le signal last_draft_had_valid_citations = false déclenche alors une réécriture de la requête (rewrite_query) suivie d’une seconde tentative de retrieval.
 
@@ -183,7 +183,7 @@ L'extrait JSONL correspondant est:
 
 On a bien modifié state.py:
 
-![alt text](image-17.png)
+![alt text](img/image-17.png)
 
 ### **Question 9.e**
 
@@ -191,20 +191,20 @@ On a testé deux mails dont 1 escalade.
 
 Pour le reply on obtient:
 
-![alt text](image-18.png)
+![alt text](img/image-18.png)
 
 On voit bien l'évènement finalize:
 
-![alt text](image-19.png)
+![alt text](img/image-19.png)
 
 Pour le cas escalate, on obtient:
 
-![alt text](image-20.png)
+![alt text](img/image-20.png)
 
 On observe bien l'action mockée handoff packet.
 On voit aussi l'évènement finalize :
 
-![alt text](image-21.png)
+![alt text](img/image-21.png)
 
 ---
 
@@ -214,7 +214,7 @@ On voit aussi l'évènement finalize :
 
 On voit bien que la décision est forcée en intent=escalate et que le risk_level est high. On voit aussi qu'un handoff_packet est produit:
 
-![alt text](image-22.png)
+![alt text](img/image-22.png)
 
 Il n'y a pas d'appel rag_search dans les logs et on y voit injection_heuristic_triggered:
 
@@ -235,11 +235,11 @@ Il n'y a pas d'appel rag_search dans les logs et on y voit injection_heuristic_t
 
 Le script s'est bien exécuté:
 
-![alt text](image-24.png)
+![alt text](img/image-24.png)
 
 Il a produit un fichier batch_results.md:
 
-![alt text](image-25.png)
+![alt text](img/image-25.png)
 
 ### **Question 11.b**
 
@@ -274,13 +274,13 @@ Run simple :E01 – Inscription au TOEIC:
 L’email est d’abord analysé par le nœud classify_email, qui détecte un intent reply sans besoin de récupération documentaire (needs_retrieval=false).
 Le nœud maybe_retrieve est donc ignoré et le nœud draft_reply génère directement une réponse. Cette trajectoire illustre un chemin court et optimal pour les demandes simples.
 
-![alt text](image-26.png)
+![alt text](img/image-26.png)
 
 Run complexe : E02 – Inscription administrative urgente
 
 Le nœud classify_email identifie une demande administrative nécessitant des informations vérifiables et active needs_retrieval=true. Le nœud maybe_retrieve effectue un appel au tool RAG (rag_search) et récupère plusieurs documents pertinents. Le nœud draft_reply génère une réponse contenant une citation issue des documents récupérés. Le nœud check_evidence valide la présence et la qualité des preuves dès la première tentative.
 
-![alt text](image-27.png)
+![alt text](img/image-27.png)
 
 
 ---
@@ -302,11 +302,11 @@ python -m TP5.run_batch
 
 Pour le run reply:
 
-![alt text](image-18.png)
+![alt text](img/image-18.png)
 
 Pour le run escalate:
 
-![alt text](image-20.png)
+![alt text](img/image-20.png)
 
 Ces captures montrent que l’agent produit une sortie finale (final_kind, final_text) et que le nœud finalize est systématiquement atteint.
 
@@ -314,13 +314,13 @@ Ces captures montrent que l’agent produit une sortie finale (final_kind, final
 
 **Architecture**
 
-![alt text](image-29.png)
+![alt text](img/image-29.png)
 
 ### **Question 12.c**
 
 **Résultats**
 
-![alt text](image-28.png)
+![alt text](img/image-28.png)
 
 ### **Question 12.d**
 
