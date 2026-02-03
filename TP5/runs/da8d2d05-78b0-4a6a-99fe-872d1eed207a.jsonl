@@ -1,0 +1,18 @@
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:02.939769Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:10.680421Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 3, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Dossier CVEC et montant de remboursement.", "rationale": "Demande administrative urgente nécessitant une action du service scolaire pour le remboursement CVEC."}}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:10.693126Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:14.845955Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "6f469ee5af66", "latency_ms": 4152, "status": "ok", "k": 5, "n_docs": 0}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:14.847309Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:14.848786Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:14.848868Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:14.849143Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:14.849198Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:14.849592Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:17.920495Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "Montant CVEC remboursement expéditeur Jackie"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:17.922846Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:18.887181Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "c73fc1c25817", "latency_ms": 964, "status": "ok", "k": 5, "n_docs": 0}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:18.888815Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:18.890577Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:18.890684Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:18.890966Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "da8d2d05-78b0-4a6a-99fe-872d1eed207a", "ts": "2026-01-25T20:00:18.891022Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2}}

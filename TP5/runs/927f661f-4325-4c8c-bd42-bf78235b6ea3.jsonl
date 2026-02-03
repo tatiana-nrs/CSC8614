@@ -1,0 +1,10 @@
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:23.368043Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E05"}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:29.192645Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 2, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Demande de renvoyer un document spécifique"}}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:29.199665Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:29.200074Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:29.201074Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:32.509106Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 0}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:32.510743Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:32.510928Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 0}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:32.511724Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "927f661f-4325-4c8c-bd42-bf78235b6ea3", "ts": "2026-01-26T22:00:32.511895Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

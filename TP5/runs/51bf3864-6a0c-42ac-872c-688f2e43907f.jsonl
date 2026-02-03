@@ -1,0 +1,11 @@
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:37.006017Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E10"}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:47.245630Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 1, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Date limite d'inscription au TOIEC.", "rationale": "Demande administrative urgente nécessitant une action de l'étudiant pour l'inscription au TOEIC."}}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:47.249113Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:50.903157Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "6feac3acaa8e", "latency_ms": 3653, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:50.905504Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:50.906103Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:59.215698Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:59.219433Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:59.219631Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:59.220422Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "51bf3864-6a0c-42ac-872c-688f2e43907f", "ts": "2026-01-25T21:23:59.220548Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

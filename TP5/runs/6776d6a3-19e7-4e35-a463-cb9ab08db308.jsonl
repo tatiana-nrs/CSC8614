@@ -1,0 +1,11 @@
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T21:59:37.791847Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E02"}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T21:59:45.094369Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 1, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Copie CNI recto verso\nAttestation CVEC", "rationale": "Demande d'inscription administrative avec demandes précises de documents"}}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T21:59:45.100656Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T21:59:49.418664Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "c7c1cdc0e678", "latency_ms": 4317, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T21:59:49.420265Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T21:59:49.421612Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T22:00:05.688090Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T22:00:05.692974Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T22:00:05.693355Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T22:00:05.694719Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "6776d6a3-19e7-4e35-a463-cb9ab08db308", "ts": "2026-01-26T22:00:05.694944Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

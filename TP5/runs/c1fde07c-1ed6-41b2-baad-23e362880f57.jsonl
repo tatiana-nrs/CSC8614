@@ -1,0 +1,7 @@
+{"run_id": "c1fde07c-1ed6-41b2-baad-23e362880f57", "ts": "2026-01-25T15:12:53.129658Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "c1fde07c-1ed6-41b2-baad-23e362880f57", "ts": "2026-01-25T15:13:01.015482Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 1, "risk_level": "high", "needs_retrieval": true, "retrieval_query": "Quelle est la date limite pour faire les démarches de remboursement CVEC ?", "rationale": "Demande administrative urgente concernant le remboursement CVEC avec un délai de paiement déterminé."}}}
+{"run_id": "c1fde07c-1ed6-41b2-baad-23e362880f57", "ts": "2026-01-25T15:13:01.018208Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "c1fde07c-1ed6-41b2-baad-23e362880f57", "ts": "2026-01-25T15:13:02.097236Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e94ddb3f4917", "latency_ms": 1078, "status": "ok", "k": 5, "n_docs": 0}}
+{"run_id": "c1fde07c-1ed6-41b2-baad-23e362880f57", "ts": "2026-01-25T15:13:02.099122Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "c1fde07c-1ed6-41b2-baad-23e362880f57", "ts": "2026-01-25T15:13:02.101486Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "c1fde07c-1ed6-41b2-baad-23e362880f57", "ts": "2026-01-25T15:13:02.101664Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}

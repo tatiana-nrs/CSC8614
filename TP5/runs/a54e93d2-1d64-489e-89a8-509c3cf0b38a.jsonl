@@ -1,0 +1,10 @@
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:12.072607Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E04"}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:18.252448Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 1, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Demande urgente d'accès à la plateforme"}}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:18.258146Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:18.258583Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:18.259393Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:23.355722Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:23.361159Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:23.361608Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 0}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:23.363237Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "a54e93d2-1d64-489e-89a8-509c3cf0b38a", "ts": "2026-01-26T22:00:23.363747Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

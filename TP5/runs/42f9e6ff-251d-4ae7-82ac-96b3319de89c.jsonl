@@ -1,0 +1,6 @@
+{"run_id": "42f9e6ff-251d-4ae7-82ac-96b3319de89c", "ts": "2026-01-26T22:01:24.120995Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "42f9e6ff-251d-4ae7-82ac-96b3319de89c", "ts": "2026-01-26T22:01:30.274386Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "teaching", "priority": 3, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "", "rationale": "Contestation officielle sans référence précise"}}}
+{"run_id": "42f9e6ff-251d-4ae7-82ac-96b3319de89c", "ts": "2026-01-26T22:01:30.278006Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "42f9e6ff-251d-4ae7-82ac-96b3319de89c", "ts": "2026-01-26T22:01:30.278387Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}
+{"run_id": "42f9e6ff-251d-4ae7-82ac-96b3319de89c", "ts": "2026-01-26T22:01:30.279563Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "42f9e6ff-251d-4ae7-82ac-96b3319de89c", "ts": "2026-01-26T22:01:30.279877Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "clarification"}}

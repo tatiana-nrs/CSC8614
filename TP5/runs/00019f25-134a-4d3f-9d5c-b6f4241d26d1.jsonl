@@ -1,0 +1,4 @@
+{"run_id": "00019f25-134a-4d3f-9d5c-b6f4241d26d1", "ts": "2026-01-23T16:57:51.139704Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "00019f25-134a-4d3f-9d5c-b6f4241d26d1", "ts": "2026-01-23T16:59:55.663374Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 1, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Demande administrative pour l'inscription au TOIEC le 25 octobre. L'action de l'étudiant est nécessaire."}}}
+{"run_id": "00019f25-134a-4d3f-9d5c-b6f4241d26d1", "ts": "2026-01-23T16:59:55.704184Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "00019f25-134a-4d3f-9d5c-b6f4241d26d1", "ts": "2026-01-23T16:59:55.704850Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

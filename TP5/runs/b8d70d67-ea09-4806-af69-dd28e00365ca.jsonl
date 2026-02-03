@@ -1,0 +1,7 @@
+{"run_id": "b8d70d67-ea09-4806-af69-dd28e00365ca", "ts": "2026-01-23T17:33:50.515410Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "b8d70d67-ea09-4806-af69-dd28e00365ca", "ts": "2026-01-23T17:35:22.628083Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 1, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Date limite d'inscription.", "rationale": "Demande administrative urgente nécessitant une action de l'étudiant."}}}
+{"run_id": "b8d70d67-ea09-4806-af69-dd28e00365ca", "ts": "2026-01-23T17:35:22.681133Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "b8d70d67-ea09-4806-af69-dd28e00365ca", "ts": "2026-01-23T17:35:27.135418Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "a5832ef583df", "latency_ms": 4453, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "b8d70d67-ea09-4806-af69-dd28e00365ca", "ts": "2026-01-23T17:35:27.136644Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "b8d70d67-ea09-4806-af69-dd28e00365ca", "ts": "2026-01-23T17:35:27.137130Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "b8d70d67-ea09-4806-af69-dd28e00365ca", "ts": "2026-01-23T17:35:27.137218Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

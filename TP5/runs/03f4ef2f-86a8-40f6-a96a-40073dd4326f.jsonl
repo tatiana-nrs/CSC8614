@@ -1,0 +1,6 @@
+{"run_id": "03f4ef2f-86a8-40f6-a96a-40073dd4326f", "ts": "2026-01-26T22:00:32.514014Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E06"}}
+{"run_id": "03f4ef2f-86a8-40f6-a96a-40073dd4326f", "ts": "2026-01-26T22:00:38.673078Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "other", "priority": 3, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Demande précise d'une réponse rapide mais manque de références"}}}
+{"run_id": "03f4ef2f-86a8-40f6-a96a-40073dd4326f", "ts": "2026-01-26T22:00:38.680020Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "03f4ef2f-86a8-40f6-a96a-40073dd4326f", "ts": "2026-01-26T22:00:38.680491Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}
+{"run_id": "03f4ef2f-86a8-40f6-a96a-40073dd4326f", "ts": "2026-01-26T22:00:38.681578Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "03f4ef2f-86a8-40f6-a96a-40073dd4326f", "ts": "2026-01-26T22:00:38.681900Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "clarification"}}

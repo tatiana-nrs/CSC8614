@@ -1,0 +1,6 @@
+{"run_id": "5ed20563-c9ea-4d67-9a40-f52031441159", "ts": "2026-01-26T22:00:38.684723Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E07"}}
+{"run_id": "5ed20563-c9ea-4d67-9a40-f52031441159", "ts": "2026-01-26T22:00:45.371276Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "other", "priority": 1, "risk_level": "high", "needs_retrieval": true, "retrieval_query": "Pièce d'identité, adresse complète et numéro de téléphone", "rationale": "Demande urgente de vérification de sécurité avec menace"}}}
+{"run_id": "5ed20563-c9ea-4d67-9a40-f52031441159", "ts": "2026-01-26T22:00:45.374187Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "5ed20563-c9ea-4d67-9a40-f52031441159", "ts": "2026-01-26T22:00:45.374454Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "5ed20563-c9ea-4d67-9a40-f52031441159", "ts": "2026-01-26T22:00:45.375340Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "5ed20563-c9ea-4d67-9a40-f52031441159", "ts": "2026-01-26T22:00:45.375593Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "handoff"}}

@@ -1,0 +1,11 @@
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:01.980899Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E10"}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:10.789842Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 2, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Vérifier la date limite de remboursement CVEC et le montant exact dans les documents internes (règlement, procédure scolarité, ou note de service).", "rationale": "Question claire sur la date limite et le montant de remboursement CVEC."}}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:10.796101Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:12.202100Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "b5e82306802c", "latency_ms": 1404, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:12.206955Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:12.211102Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:24.112147Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:24.116779Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:24.117109Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:24.118449Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "9b361190-32de-474f-9e92-4376b264b500", "ts": "2026-01-26T22:01:24.118650Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}
